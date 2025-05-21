@@ -2,7 +2,9 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #d8d0c3
 }
+/* header */
     header {
         background-color: #d8d0c3;
         display: flex;
@@ -28,11 +30,49 @@ body {
     }
     .navbar li a {
         text-decoration: none;
-        color: #1e1e1e;
+        color: #ffffff;
         font-family: 'Lato', sans-serif;
         font-size: 1.1rem;
         position: relative;
-      }
+    }
+
+    .navbar li a:hover {
+        text-decoration: none; /* Remove default underline */
+        color: #ffffff; /* Keep the text color the same */
+        border-bottom: 2px solid white; /* Add a white underline */
+    }
+    /*slut header*/
+    .Heroimg {
+        position: relative; /* Establish a positioning context for child elements */
+    }
+
+    .baggrund img {
+        width: 100%;
+        height: 550px;
+        position: absolute; /* Position the image relative to .Heroimg */
+        top: 0;
+        left: 0;
+        z-index: 1; /* Place the image behind other elements */
+    }
+    .titellogo {
+        position: relative; /* Ensure the logo and h1 are above the image */
+        z-index: 2; /* Higher z-index to place it above the image */
+        text-align: center; /* Center the content */
+        color: rgb(0, 0, 0); /* Ensure text is visible on the image */
+    }
+    .titellogo img {
+        width: 400px;
+        height: 400px;
+    }
+    .titellogo h1 {
+        font-family: 'Playfair Display';
+        font-size: 48px;
+        padding-bottom: 100px;
+
+    }
+  
+    
+    /*footer*/
       .footer {
         display: flex;
         justify-content: space-around;
@@ -74,3 +114,4 @@ body {
         margin-right: 10px;
         font-size: 16px;
     }
+    /*footer slut*/

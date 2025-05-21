@@ -39,26 +39,35 @@ body {
         background-color: #d8d0c3;
         color: white;
         padding: 20px 0;
-        height: 418px;
+        height: 300px;
+        gap: 50px;
     }
     
     .footer-box {
+        flex: 1; /* Ensures all boxes take up equal space */
         text-align: center;
-        width: 30%;
         background-color: #4a5240; /* Same as footer background */
-        padding: 20px;
+        padding: 50px; /* Adjust padding as needed */
         border: 1px solid white;
+        margin: 0 20px; /* Add space between boxes */
+        display: flex;
+        flex-direction: column; /* Align content vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
     }
     .footer-row {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding: 20px;
     }
    
     .footer-box p {
         margin: 10px 0;
-        font-size: 14px;
+        font-family: "Lato-Light", Helvetica;
+        font-size: 20px;
         color: white;
+        text-align: center;
     }
     
     .footer-box i {

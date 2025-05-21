@@ -33,3 +33,35 @@ body {
         font-size: 1.1rem;
         position: relative;
       }
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #d8d0c3;
+        color: white;
+        padding: 20px 0;
+        height: 418px;
+    }
+    
+    .footer-box {
+        text-align: center;
+        width: 30%;
+        background-color: #4a5240; /* Same as footer background */
+        padding: 20px;
+        border: 1px solid white;
+    }
+    .footer-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    .footer-box p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: white;
+    }
+    
+    .footer-box i {
+        margin-right: 10px;
+        font-size: 16px;
+    }

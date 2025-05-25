@@ -1,12 +1,21 @@
-body {
-    font-family: 'Nunito Sans', sans-serif;
+html, body {
+    height: 100%; /* Ensure the body and html take up the full height of the viewport */
     margin: 0;
-    padding: 0;
-    background-color: #d8d0c3
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #d8d0c3;
+    min-height: 120vh; /* Increase the minimum height of the body to push the footer further down */
+}
+
 /* header */
     header {
-        background-color: #d8d0c3;
+        background-color: rgba(216, 208, 195, 0.9); 
         display: flex;
         position: sticky;
         width: 100%;
@@ -21,7 +30,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 50%;
+        padding-left: 45%;
     }
     .navbar ul {
         display: flex;
@@ -32,7 +41,7 @@ body {
         text-decoration: none;
         color: #ffffff;
         font-family: 'Lato', sans-serif;
-        font-size: 1.1rem;
+        font-size: 20px;
         position: relative;
     }
 
@@ -42,6 +51,9 @@ body {
         border-bottom: 2px solid white; /* Add a white underline */
     }
     /*slut header*/
+
+
+
     .Heroimg {
         position: relative; /* Establish a positioning context for child elements */
     }
@@ -67,11 +79,92 @@ body {
     .titellogo h1 {
         font-family: 'Playfair Display';
         font-size: 48px;
-        padding-bottom: 100px;
-
+        margin-top: -8%; /* Move the h1 closer to the logo */
+        padding: 0; /* Ensure no extra padding is applied */
+        position: relative; /* Keep it positioned relative to its container */
     }
-  
-    
+
+
+
+    .baggrund1 {
+        position: relative; /* Establish a positioning context for child elements */
+    }
+    .baggrund1 img {
+        width: 100%;
+        height: 700px;
+        opacity: 0.8; /* Adjust opacity to make the image slightly transparent */
+        position: relative; 
+        padding-top: 12%; 
+        z-index: -1; 
+    }
+    .bookingtext {
+        position: absolute; /* Position the text over the image */
+        top: 100%; /* Center vertically */
+        left: 12%; /* Center horizontally */
+        
+    }
+    .bookingtext p {
+        font-family: 'Playfair Display';
+        font-size: 48px;
+        text-align: center;
+    }
+    .bookingkort {
+        position: absolute; /* Position the text over the image */
+        top: 150%; /* Center vertically */
+        left: 35%; /* Center horizontally */
+        z-index: 1; /* Ensure it appears above the image */
+        background-color: #4a5240; /* Same as footer background */
+        padding: 20px;;
+        border-radius: 15px; /* Add rounded corners */
+        width: 300px; /* Set a fixed width */
+        
+    }
+    .bookingkort img {
+        width: 70%;
+        height: 70%;
+        
+    }
+
+
+
+
+  .flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 10%; /* afstand mellem kortene */
+  flex-wrap: wrap; /* gør den responsiv */
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centrerer knappen og billedet horisontalt */
+  text-align: center;
+     background-color: #7F776B;
+    border-radius: 15px;
+}
+
+.flex-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0; /* rundede hjørner på billedet */
+}
+
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  background-color: #5e6252;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #44483a;
+}
     /*footer*/
       .footer {
         display: flex;
@@ -81,6 +174,7 @@ body {
         padding: 20px 0;
         height: 300px;
         gap: 50px;
+        margin-top: auto; /* Push the footer to the bottom of the page */
     }
     
     .footer-box {

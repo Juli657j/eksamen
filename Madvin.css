@@ -1,0 +1,36 @@
+.herovinmad {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  .herovinmad img {
+    width: 100%;
+    height: 750px; 
+    
+  }
+  
+  .herooverlay {
+    position: absolute;
+    bottom: 2px; /* sæt boksen 30px fra bunden */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(94, 98, 82, 0.85);
+    padding: 50px 50px; /* øget padding for mere luft omkring teksten */
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    max-width: 90%; 
+  }
+  
+  .herooverlay h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .herooverlay p {
+    font-size: 22px;
+    line-height: 1.8;
+  }

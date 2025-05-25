@@ -1,0 +1,43 @@
+.Heroimg {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+  
+  .vinliste {
+    background-color: #d1c5b6; /* matcher den lyse baggrund */
+    padding: 40px 20px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  
+  .vinliste h2 {
+    color: white;
+    font-size: 24px;
+    margin: 40px 0 20px;
+    text-decoration: underline;
+  }
+  
+  .vin-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+    border-bottom: 1px solid #00000033;
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .vin-item img {
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .vin-item p {
+    font-size: 20px;
+    margin: 0;
+  }
+  

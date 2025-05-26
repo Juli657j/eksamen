@@ -26,11 +26,46 @@
   }
   
   .herooverlay h2 {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
   
   .herooverlay p {
     font-size: 22px;
     line-height: 1.8;
+    }
+   
+  .madvin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #cfc2b1; /* baggrundsfarven i billedet */
+  }
+  
+  .madvin-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .madvin-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .madvin-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #e5dbc8;  /* lys baggrund */
+    color: #000;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
   }

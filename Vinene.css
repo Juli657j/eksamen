@@ -1,43 +1,138 @@
-.Heroimg {
+.herovinmad {
+    position: relative;
     width: 100%;
-    max-height: 500px;
+    max-height: 600px;
     overflow: hidden;
   }
   
+  .herovinmad img {
+    width: 100%;
+    height: 750px; 
+    
+  }
+  
+  .herooverlay {
+    position: absolute;
+    bottom: 2px; /* sæt boksen 30px fra bunden */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(94, 98, 82, 0.85);
+    padding: 50px 50px; /* øget padding for mere luft omkring teksten */
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    max-width: 90%; 
+  }
+  
+  .herooverlay h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .herooverlay p {
+    font-size: 22px;
+    line-height: 1.8;
+    }
+   
   .vinliste {
     background-color: #d1c5b6; /* matcher den lyse baggrund */
     padding: 40px 20px;
-    font-family: 'Playfair Display', serif;
     text-align: center;
   }
   
   .vinliste h2 {
     color: white;
-    font-size: 24px;
+    font-size: 35px;
     margin: 40px 0 20px;
     text-decoration: underline;
   }
   
-  .vin-item {
+  .vin-itemh {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     margin: 30px 0;
     border-bottom: 1px solid #00000033;
+    border-top: 1px solid #00000033;
     padding-bottom: 20px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: row;
   }
+  .vin-itemv {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+    border-bottom: 1px solid #00000033;
+    border-top: 1px solid #00000033;
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row-reverse;
+  }
+
   
   .vin-item img {
     height: 120px;
     object-fit: contain;
+    opacity: 0.8;
+  }
+  .vin-info  {
+    padding-bottom: 20px;
   }
   
-  .vin-item p {
-    font-size: 20px;
+  .vin-itemh h3 {
+    font-size: 30px;
     margin: 0;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20%;
+
   }
-  
+  .vin-itemv h3 {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 20%;
+
+  }
+  .vin-itemh p {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+  }
+  .vin-itemv p {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+  }
+  a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Makes the link inherit the color of its parent element */
+}
+
+a:hover {
+    text-decoration: none; /* Ensures no underline appears on hover */
+    color: inherit; /* Keeps the color consistent on hover */
+}
+.footerlogo
+{
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Ensure the logo spans the full width of the section */
+    height: 200px; /* Set a height for the section (adjust as needed) */
+}
+
+.footerlogo img {
+    max-width: 100%; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.8; 
+}
+

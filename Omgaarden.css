@@ -1,0 +1,52 @@
+.om-havblink {
+    background-color: #d0c7bb;
+    padding: 60px 20px;
+    font-family: 'Playfair Display', serif;
+    color: #1e1e1e;
+  }
+  
+  .sektion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .sektion-reverse {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .sektion img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .tekstboks {
+    background-color: #e5e0d7;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  
+  .tekstboks h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .tekstboks p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  

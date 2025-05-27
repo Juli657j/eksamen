@@ -36,14 +36,14 @@
     }
    
   .vinliste {
-    background-color: #d1c5b6; /* matcher den lyse baggrund */
+    background-color: #d1c5b6;
     padding: 40px 20px;
     text-align: center;
   }
   
   .vinliste h2 {
-    color: white;
-    font-size: 35px;
+    color: rgb(46, 44, 44);
+    font-size: 50px;
     margin: 40px 0 20px;
     text-decoration: underline;
   }
@@ -79,14 +79,30 @@
   }
 
   
-  .vin-item img {
-    height: 120px;
+  .vin-itemv img {
+    height: 300px;
     object-fit: contain;
-    opacity: 0.8;
+  
+  }
+  .vin-itemh img {
+    height: 300px;
+    object-fit: contain;
+
   }
   .vin-info  {
     padding-bottom: 20px;
   }
+  
+  .vin-info h3 {
+    display: flex; /* Use Flexbox to align the text and icon */
+    align-items: center; /* Vertically align the icon with the text */
+    gap: 10px; /* Add spacing between the icon and the text */
+}
+
+.vin-info h3 .icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px; /* Ensure the icon maintains its aspect ratio */
+}
   
   .vin-itemh h3 {
     font-size: 30px;
@@ -134,5 +150,25 @@ a:hover {
     max-width: 100%; /* Adjust the size of the logo */
     height: auto; /* Maintain aspect ratio */
     opacity: 0.8; 
+}
+
+.image-container {
+    position: relative; /* Establish a positioning context for the stamp */
+    display: inline-block; /* Ensure the container wraps around the images */
+}
+
+
+
+.stamp-img {
+    position: absolute; /* Position the stamp relative to the container */
+    top: 0; /* Adjust the vertical position of the stamp */
+    right: 10px; /* Adjust the horizontal position of the stamp */
+    width: 100px; /* Adjust the size of the stamp */
+    height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 768px) {
+  .titellogo h1 {
+    display: none; 
+  }
 }
 

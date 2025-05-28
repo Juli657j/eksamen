@@ -49,4 +49,10 @@
     line-height: 1.6;
     margin-bottom: 10px;
   }
+  @media screen and (max-width: 768px) {
+    .sektion-reverse {
+      flex-direction: column-reverse;
+    
+  }
+}
   

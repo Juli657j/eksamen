@@ -50,6 +50,37 @@ body {
         color: #ffffff; /* Keep the text color the same */
         border-bottom: 2px solid white; /* Add a white underline */
     }
+    .navbar li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Adjust the position of the underline */
+        width: 0;
+        height: 2px; /* Thickness of the underline */
+        background-color: white; /* Color of the underline */
+        transition: width 0.3s ease; /* Smooth transition for the underline */
+    }   
+    .menu-toggle {
+        display: none;
+      }
+      
+      .menu-icon {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 1001;
+        cursor: pointer;
+      }
+      
+      .menu-icon img {
+        width: 35px;
+        height: auto;
+        padding-right: 20px;
+        padding-top: 20px;
+      }
+    
+      
     /*slut header*/
 
 
@@ -240,7 +271,9 @@ body {
         margin-right: 10px;
       }
     /*footer slut*/
+
     @media (max-width: 768px) {
+        /*footer responsiv*/
         .footer {
           flex-direction: column;
           height: auto;
@@ -263,11 +296,39 @@ body {
           margin-bottom: 10px;
           margin-right: 0;
         }
-        .logo img {
-            height: 63px
-            width auto;
+        @media (max-width: 768px) {
+            .navbar {
+              display: none;
+              flex-direction: column;
+              background-color: rgba(216, 208, 195, 0.95);
+              position: absolute;
+              top: 160px;
+              right: 0;
+              width: 100%;
+              padding: 20px 0;
+              z-index: 1000;
+              border-radius: 12px;
+            }
+          
+            .navbar ul {
+              flex-direction: column;
+              align-items: center;
+              gap: 20px;
+              padding: 0;
+              margin: 0;
+            }
+          
+            .menu-icon {
+              display: block;
+            }
+          
+            .menu-toggle:checked + .menu-icon + .navbar {
+              display: flex;
+            }
+          
         
-        }
+              }
+          }
+   
 
-
-    }
+    
